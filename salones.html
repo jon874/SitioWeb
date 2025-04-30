@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Salones y Aulas de la Universidad Técnica de Ambato</title>
+    <style>
+        body {
+            background-color: lightgrey;
+            background-image: url('marg.jpg');  /* Imagen de fondo */
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;  /* Centrado vertical y horizontal */
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+
+        /* Estilo para el header con gradientes */
+        header {
+            margin: 30px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid;
+            background: -webkit-linear-gradient(top, rgb(141, 22, 22), rgb(90, 12, 12), rgb(112, 6, 6));
+            transform: skew(20deg);
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%) skew(20deg);
+            z-index: 2; /* Asegura que el header quede encima del fondo */
+        }
+
+        header h1, header h2 {
+            color: white;
+        }
+
+        /* Estilo para el botón Volver */
+        .volver {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease;
+            z-index: 2; /* Asegura que el botón quede encima */
+        }
+
+        .volver:hover {
+            background-color: #555;
+        }
+
+        /* Contenedor central con texto e imagen */
+        .contenido {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+            z-index: 1; /* Asegura que el contenido esté por encima del fondo */
+            max-width: 800px;
+            width: 100%;
+            position: relative;
+            margin-top: 210px; /* Mueve el contenido más abajo */
+        }
+
+        .contenido img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .contenido h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); /* Sombra en el texto (bordes) */
+            text-align: center; 
+            border: 5px solid rgb(66, 5, 13); /* Borde alrededor del texto */
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para el texto */
+        }
+
+        /* Estilo para el párrafo */
+        .contenido h4 {
+            font-size: 18px;
+            margin-top: 15px;
+            text-align: left;
+            line-height: 1.6;
+            max-width: 800px;
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro para mejorar contraste */
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Botón Volver -->
+<a href="uta8.html" class="volver">← Volver</a>
+
+<!-- Header con gradiente y efecto skew -->
+<header>
+    <h1>Bienvenido a la UTA</h1>
+    <h2>Salones y aulas de la Universidad Técnica De Ambato</h2>
+</header>
+
+<!-- Contenedor central con texto e imagen -->
+<div class="contenido">
+    <h3>¡Explora nuestros salones y aulas!</h3>
+    <h4>Facilitar la instrucción académica: Son los lugares donde se llevan a cabo las clases teóricas, en las que los docentes presentan los contenidos y explican conceptos clave de las diferentes disciplinas.
+
+        Fomentar el aprendizaje colaborativo: En las aulas, los estudiantes pueden participar en actividades de grupo, debates, presentaciones y discusiones que promueven el trabajo en equipo y el intercambio de ideas.
+        
+        Desarrollo de habilidades prácticas: Algunas aulas están diseñadas para actividades prácticas, como laboratorios de ciencias, salas de informática o aulas de arte, donde los estudiantes aplican los conocimientos adquiridos en situaciones reales o simuladas.
+    </h4>
+    <img src="salones.jpg" alt="Imagen de salón de clases">  <!-- Cambia el nombre de la imagen según tu archivo -->
+</div>
+
+</body>
+</html>

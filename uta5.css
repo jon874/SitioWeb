@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('fondo3.jpg'); /* Aquí puedes poner la ruta de tu imagen de fondo */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    font-family: Arial, sans-serif;
+    color: rgb(5, 5, 5);
+  }
+  @font-face{
+    font-family: fjallone;
+    src: url(FjallaOne-Regular.ttf);
+ 
+    font-family: fjallone;
+    src: url(FjallaOne-Regular.ttf);
+
+    font-family: fjallone;
+    src: url(FjallaOne-Regular.ttf);
+
+    font-family: fjallone;
+    src: url(FjallaOne-Regular.ttf);
+ }
+ .h1{
+    font-family: fjallone;
+    font-size: 35px;
+   }
+.p1{
+ font-family: fjallone;
+ font-size: 20px;
+ width: 60%;
+ border: 1px solid black;
+ color: black;
+}
+.p2{
+  font-family: fjallone;
+  font-size: 20px;
+  width: 60%;
+  border: 1px solid black;
+  color: rgb(179, 12, 12);
+ }
+ .p3{
+  font-family: fjallone;
+  font-size: 20px;
+  width: 60%;
+  border: 1px solid black;
+  color: black;
+ }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MÚLTIPLES Backgrounds</title>
+    <style>
+        body {
+            background-color: lightgrey;
+            background-image: url('uta-aniversario-ambato.jpeg');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-wrap: wrap;
+        }
+
+        .cuadro {
+            margin: 30px;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            background-size: cover;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .cuadro:hover {
+            transform: scale(1.1);
+        }
+
+        #solido {
+            background-image: url('salones.jpg');
+            border: 4px solid white;
+        }
+
+        #dotted {
+            background-image: url('pisinas.jpg');
+            border: 4px dotted white;
+        }
+
+        #dashed {
+            background-image: url('lab.jpg');
+            border: 4px dashed white;
+        }
+
+        #double {
+            background-image: url('canchas.jpg');
+            border: 4px double white;
+        }
+
+        #groove {
+            background-image: url('asensor.jpg');
+            border: 4px groove white;
+        }
+
+
+        .volver {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            margin: 30px;
+            padding: 20px;
+            text-align: center; 
+            border:1px solid;
+            box-shadow: rgb(150, 150, 150) 5px 5px 20px inset;
+        }
+
+        .volver:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+
+<a href="uta 4.html" class="volver">← Volver</a>
+
+
+<a href="salones.html" class="cuadro" id="solido" title="Salones UTA"></a>
+<a href="pisinas.html" class="cuadro" id="dotted" title="Piscinas UTA"></a>
+<a href="laboratorios.html" class="cuadro" id="dashed" title="Laboratorio UTA"></a>
+<a href="canchas.html" class="cuadro" id="double" title="Canchas UTA"></a>
+<a href="asensor.html" class="cuadro" id="groove" title="Ascensor UTA"></a>
+
+</body>
+</html>

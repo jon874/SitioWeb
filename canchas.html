@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Cubo en movimiento</title>
+    <style>
+        body {
+            perspective-origin: 50% -100%;
+            perspective: 1500px;
+            overflow: hidden;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+
+            /* Fondo con imagen */
+            background-image: url('rojo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        header {
+            margin: 40px auto 20px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid white;
+            width: 80%;
+            transition: transform 1s ease-in-out;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        header:hover {
+            transform: rotate(2deg);
+        }
+
+        .cube {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            transform-style: preserve-3d;
+            transform-origin: 50% 100%;
+            transform: rotateY(45deg) rotateX(0);
+            transition: transform 10s;
+        }
+
+        .cubeFace {
+            position: absolute;
+            left: 40%;
+            top: 0;
+            width: 20%;
+            height: 100%;
+            margin: 0 auto;
+            transform-style: inherit;
+            background: rgba(197, 35, 41, 0.95);
+            box-shadow: inset 0 0 0 5px #333;
+            transform-origin: 50% 50%;
+            transform: rotateX(90deg);
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            overflow-y: auto;
+        }
+
+        .cubeFace h1 {
+            font-size: 16px;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .cubeFace img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid white;
+            margin-top: 10px;
+        }
+
+        .face2 {
+            transform: rotateZ(90deg) translateX(100%) rotateY(90deg);
+        }
+
+        .cubeFace:before, .cubeFace:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-origin: 0 0;
+            background: inherit;
+            box-shadow: inherit;
+            backface-visibility: inherit;
+        }
+
+        .cubeFace:before {
+            top: 100%;
+            left: 0;
+            transform: rotateX(-90deg);
+        }
+
+        .cubeFace:after {
+            top: 0;
+            left: 100%;
+            transform: rotateY(90deg);
+        }
+
+        body:hover .cube {
+            transform: rotateY(405deg) rotateX(360deg);
+        }
+        .volver {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease;
+            z-index: 2; /* Asegura que el botón quede encima */
+        }
+
+        .volver:hover {
+            background-color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="uta8.html" class="volver">← Volver</a>
+<header>
+    <h1>CANCHAS DE LA UNIVERSIDAD TÉCNICA DE AMBATO</h1>
+</header>
+
+<div class="cube">
+    <div class="cubeFace">
+        <h1>
+            Las áreas de cancha en una universidad cumplen un papel fundamental en la formación integral de los estudiantes. Estos espacios no solo están destinados a la práctica de deportes, sino que también promueven el bienestar físico, mental y social de la comunidad universitaria. Al facilitar la actividad física, las canchas contribuyen a mejorar la salud, reducir el estrés académico y fomentar hábitos de vida saludables.
+        </h1>
+        <img src="canchas.jpg" alt="Cancha de la universidad">
+    </div>
+    <div class="cubeFace face2"></div>
+</div>
+
+</body>
+</html>

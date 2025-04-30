@@ -1,0 +1,21 @@
+@font-face{
+   font-family: fjallone;
+   src: url(FjallaOne-Regular.ttf);
+
+   font-family: fjallone;
+   src: url(FjallaOne-Regular.ttf);
+}
+#p1{
+   font-family: "fjallone", cursive;
+   font-size: 200%;
+   color: black; 
+   padding: 50px;
+   text-align-last: center;"
+}
+#p2{
+   font-family: "fjallone", cursive;
+   font-size: 170%;
+   color: black; 
+   padding: 0px;
+   text-align-last: center;"
+}

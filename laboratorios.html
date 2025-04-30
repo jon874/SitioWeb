@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="UTF-8">
+    <title>Animación con imagen y texto</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(fond.jpg); /* Cambia esto por el nombre de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contenedor {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .cuadro {
+            width: 270px;
+            height: 270px; 
+            background-image: url(lab.jpg); /* Cambia esto por el nombre de tu imagen para el cuadro */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            text-align: center;
+            color: white;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.6);
+        }
+
+        @keyframes example {
+            0% {
+                left: 0px;
+                top: 0px;
+                transform: rotate(50deg);
+            }
+            25% {
+                left: 200px;
+                top: 0px;
+            }
+            50% {
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .texto-lado {
+            max-width: 300px;
+            background-color: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+        .volver {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease;
+            z-index: 2; /* Asegura que el botón quede encima */
+        }
+
+        .volver:hover {
+            background-color: #555;
+        }
+
+    </style> 
+</head> 
+<body>
+    <a href="uta8.html" class="volver">← Volver</a>
+<div class="contenedor">
+    <div class="cuadro">
+    </div>
+    <div class="texto-lado">
+        <h2>laboratorios UTA</h2>
+        <p>Los laboratorios en la universidad sirven para complementar la teoría con la práctica, lo cual es esencial para una formación académica completa.
+            Permiten a los estudiantes experimentar y comprobar en la práctica lo que aprenden en clases teóricas.
+            Desarrollo de habilidades técnicas: Ayudan a adquirir destrezas en el uso de instrumentos, equipos o software especializado, dependiendo del área de estudio (como química, física, biología, ingeniería, informática, etc.).
+            Fomento del pensamiento crítico y científico: Los estudiantes deben observar, analizar, formular hipótesis y sacar conclusiones, fortaleciendo su razonamiento lógico.</p>
+    </div>
+</div>
+
+</body> 
+</html>
